@@ -81,16 +81,17 @@ a {
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.container-header {
+/* .container-header {
     display: flex;
     align-items: center;
-}
+} */
     
 .navigation {
     display: flex;
     align-items: center;
 }
 
+/* Base styles */
 .logo-accent {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -100,19 +101,42 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand);
-    padding: 24px 0;
-    margin-right: 76px;
+    
+}
+
+/* Tablet */
+@media only screen and (max-width: 767px) {
+    .logo-accent,
+    .logo-up {
+        padding: 24px 0 22px;
+    }
+}
+
+/* Desktop */
+.logo-accent,
+.logo-up {
+padding: 24px 0; 
+margin-right: 76px;
 }
 
 .logo-up {
     color: var(--brand-background);
     font-family: 'Raleway', sans-serif;
-    padding: 24px 0;
+}
+
+.icon-menu-hamburger {
+fill: var(--brand-background);
 }
 
 .menu-list {
     display: flex;
     gap: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+    .menu-list {
+        display: none;
+    }
 }
 
 .link {
@@ -169,6 +193,12 @@ a {
 .address-list {
     font-style: normal;
     margin-left: auto; 
+}
+
+@media only screen and (max-width: 767px) {
+    .address-list {
+        display: none;
+    }
 }
 
 .address.list > a {
@@ -265,6 +295,8 @@ a {
 /* Tablet */
 @media only screen and (min-width: 768px) {
     .list-advantages {
+        display: flex;
+        flex-wrap: wrap;
         gap: 72px 24px;
     }
 }
@@ -280,9 +312,7 @@ a {
 
 /* Base styles */
 .advantages {
-    max-width: 396px;
-    margin: 0;
-    padding: 96px 0;
+   padding: 96px 0;
 }
 
 /* Desktop */
@@ -292,10 +322,20 @@ a {
     }
 }
 
+/* Base styles */
+@media only screen and (max-width: 767px) {
+    .item-advantages:not(:last-child),
+    .item-advantages {
+        margin-bottom: 72px;
+        max-width: 356px;
+    }
+}
+
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
     .item-advantages {
-        width: calc((100% - 48px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 }
 
