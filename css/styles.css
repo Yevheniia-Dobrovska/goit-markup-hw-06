@@ -81,14 +81,34 @@ a {
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-/* .container-header {
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .container-header {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+    .container-header {
+        display: flex;
+        align-items: center;
+    }
+}
+   
+/* Base styles */
+.navigation {
     display: flex;
-    align-items: center;
-} */
-    
+    justify-content: space-between;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
 .navigation {
     display: flex;
     align-items: center;
+}
 }
 
 /* Base styles */
@@ -124,9 +144,26 @@ margin-right: 76px;
     font-family: 'Raleway', sans-serif;
 }
 
-.icon-menu-hamburger {
-fill: var(--brand-background);
+.burger-menu {
+        stroke: var(--brand-background);
+        display: inline-block;
+        
+    }
+
+ /* Base styles */
+.menu-toggle {
+    border: none;
+    background-color: transparent;
+    
 }
+
+/* Tablet and Desktop */
+@media only screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
 
 .menu-list {
     display: flex;
@@ -185,19 +222,45 @@ fill: var(--brand-background);
     color: var(--brand-background);
 }
 
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .address {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
 .address {
     display: flex;
     gap: 40px;
 }
-
-.address-list {
-    font-style: normal;
-    margin-left: auto; 
 }
 
+/* Base styles */
 @media only screen and (max-width: 767px) {
     .address-list {
         display: none;
+    }
+}
+
+/* Tablet */
+/* @media only screen and (min-width: 768px) {
+.address-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-style: normal;
+    
+}
+} */
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+    .address-list {
+        margin-left: auto;
     }
 }
 
