@@ -290,6 +290,7 @@ margin-right: 76px;
     }
 }
 
+
 /* Tablet */
  @media only screen and (min-width: 768px) {
 .address-list {
@@ -310,13 +311,14 @@ margin-right: 76px;
 }
 
 /* Base */
-.address-list-mobile {
+/* .address-list-mobile {
     display: flex;
+    flex-direction: column-reverse;
         flex-wrap: wrap;
         gap: 12px;
         font-style: normal;
-        margin-left: auto;
-}
+       
+} */
 
 .address-list > a {
     color: var(--text);
@@ -1274,14 +1276,16 @@ letter-spacing: 0.48px;
 }
 
 
-.menu-container {    
+.menu-container {  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-top: 80px;
-    padding-left: 40px;
+    
     background-color: var(--page);
     z-index: 999;
     transform: translateX(100%);
@@ -1301,10 +1305,11 @@ letter-spacing: 0.48px;
 }
 
 .mobile-menu {
-    display: column;
-    gap: 40px;
     padding: 0;
-    margin: 0;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: auto;
+    margin-bottom: 284px;
     list-style: none;
 }
 
