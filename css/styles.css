@@ -130,7 +130,6 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand);
-    
 }
 
 /* Tablet */
@@ -160,7 +159,6 @@ a {
 @media only screen and (min-width: 1158px) {
 .logo-accent,
 .logo-up {
-
 margin-right: 76px;
 }
 }
@@ -170,13 +168,35 @@ margin-right: 76px;
     font-family: 'Raleway', sans-serif;
 }
 
+/* Base styles */
+@media only screen and (max-width: 767px) {
+    .menu-list {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .menu-list {
+        display: inline-block;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+    .menu-list {
+        display: flex;
+        gap: 40px;
+    }
+}
+
 .burger-menu {
         stroke: var(--brand-background);
         display: inline-block;
-        
-    }
+}
 
- /* Base styles */
+
+/* Base styles */
 .menu-toggle {
     border: none;
     background-color: transparent;
@@ -189,26 +209,6 @@ margin-right: 76px;
         display: none;
     }
 }
-
-/* Base styles */
-@media only screen and (max-width: 767px) {
-    .menu-list {
-        display: none;
-    }
-}
-
-/* Desktop */
-.menu-list {
-    display: flex;
-    gap: 40px;
-}
-
-/* Tablet */
-/* @media only screen and (min-width: 768px) {
-    .menu-list-item:not(:last-child) {
-        margin-bottom: 12px;
-    }
-} */
 
 .link {
     text-decoration: none;
@@ -304,6 +304,13 @@ margin-right: 76px;
 .address-link:hover,
 .address-link:focus {
     color: var(--button-filter-hover);
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .mail-item {
+        margin-bottom: 12px;
+    }
 }
 
 .hero {
