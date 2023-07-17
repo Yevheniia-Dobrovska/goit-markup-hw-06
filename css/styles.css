@@ -81,6 +81,12 @@ a {
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+/* Base styles */
+.container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
     .container-header {
@@ -179,6 +185,7 @@ margin-right: 76px;
 @media only screen and (min-width: 768px) {
     .menu-list {
         display: inline-block;
+        
     }
 }
 
@@ -282,6 +289,7 @@ margin-right: 76px;
     margin-left: auto;
 }
 }
+
 
 /* Desktop */
 @media only screen and (min-width: 1158px) {
