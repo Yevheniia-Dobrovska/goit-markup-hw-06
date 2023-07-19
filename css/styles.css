@@ -581,7 +581,7 @@ margin-right: 76px;
     background-color: var(--logo-down);
 }
 
-/* Tablet */
+/* Mobile & Tablet */
 @media only screen and (max-width: 767px) {
     .team {
         padding: 96px 0;
@@ -592,6 +592,13 @@ margin-right: 76px;
 @media only screen and (min-width: 1158px) {
     .team {
         padding: 120px 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .container-team {
+        max-width: 584px;
     }
 }
 
@@ -625,6 +632,7 @@ margin-right: 76px;
 @media only screen and (min-width: 768px) {
     .list-team {
         display: flex;
+        flex-wrap: wrap;
         gap: 24px;
     }
 }
@@ -695,6 +703,29 @@ background-color: var(--button-filter-hover);
     align-items: center;
 }
 
+/* Mobile & Tablet*/
+@media only screen and (min-width: 428px) {
+    .customers {
+        padding: 96px 0;
+        
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+    .customers {      
+        padding: 120px 0;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+.container-customers {
+    max-width: 584px;
+}
+}
+
 .title-customers {
     font-weight: 700;
     font-size: 36px;
@@ -710,16 +741,33 @@ background-color: var(--button-filter-hover);
     text-align: center;
 }
 
-.customers {
-    padding: 120px 0;
-    margin: 0 auto;
+/* Mobile */
+@media only screen and (min-width: 428px) {
+    .list-customers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc((100% - 16px) / 2);
+        
+    }
 }
 
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .list-customers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc((100% - 48px) / 3);
+        }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
 .list-customers {
     display: flex;
     justify-content: center;
     gap: 24px;
     align-items: center;
+}
 }
 
 .link-customers {
@@ -735,6 +783,13 @@ background-color: var(--button-filter-hover);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .link-customers {
+        width: 190px;
+    }
+}
 
 .icon-customers {
     fill: currentColor;
@@ -811,16 +866,18 @@ max-width: 264px;
 /* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 427px) {
     .socialmedia-list.social-mobile {
+        display: flex;
         gap: 34px;
     }
 }
 
-/* Tablet */
+/* Media */
+@media only screen and (min-width: 428px) {
 .socialmedia-list.social-mobile {
     display: flex;
     gap: 56px;
     }
-
+}
 
 .right-side {
     margin-right: 80px;
