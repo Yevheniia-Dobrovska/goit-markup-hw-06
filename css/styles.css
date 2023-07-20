@@ -51,7 +51,7 @@ a {
 /* Base styles for small devices */
 .container {
     min-width: 320px;
-    max-width: 396px;
+    max-width: 428px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -482,15 +482,14 @@ margin-right: 76px;
     }
 }
 
-/* Base styles */
+/* Mobile*/
 @media only screen and (max-width: 767px) {
     .item-advantages:not(:last-child),
     .item-advantages {
         margin-bottom: 72px;
-        max-width: 356px;
+        max-width: 396px;
     }
 }
-
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
@@ -746,7 +745,7 @@ background-color: var(--button-filter-hover);
     .list-customers {
         display: flex;
         flex-wrap: wrap;
-        gap: calc((100% - 16px) / 2);
+        gap: 72px 16px;
         
     }
 }
@@ -754,27 +753,49 @@ background-color: var(--button-filter-hover);
 /* Tablet */
 @media only screen and (min-width: 768px) {
     .list-customers {
-        display: flex;
-        flex-wrap: wrap;
-        gap: calc((100% - 48px) / 3);
+        gap: 72px 24px;
         }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1158px) {
 .list-customers {
-    display: flex;
     justify-content: center;
     gap: 24px;
     align-items: center;
 }
 }
 
+.item-customers {
+    background: var(--page);
+    
+}
+
+/* Mobile */
+@media only screen and (min-width: 428px) {
+    .item-customers {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .item-customers {
+        width: calc((100% - 48px) / 3);
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+    .item-customers {
+        width: calc((100% - 120px) / 6);
+    }
+}
+
 .link-customers {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 168px;
     height: 88px;
     padding: 16px 32px;
     border-radius: 4px;
@@ -799,11 +820,6 @@ background-color: var(--button-filter-hover);
 .link-customers:focus {
     border: 1px solid var(--button-filter-hover);
     color: var(--button-filter-hover);
-}
-
-.item-customers {
-    background: var(--page);
-    width: calc((100% - 120px) / 6);
 }
 
 .footer-section {
