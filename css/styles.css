@@ -774,6 +774,15 @@ background-color: var(--button-filter-hover);
     text-align: center;
 }
 
+@media only screen and (max-width: 427px) {
+    .list-customers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /* Mobile */
 @media only screen and (min-width: 428px) {
     .list-customers {
@@ -862,7 +871,7 @@ background-color: var(--button-filter-hover);
 }
 
 /* Mobile */
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
     .footer-section {
         padding-top: 97.5px;
         padding-bottom: 96px;
@@ -913,7 +922,7 @@ max-width: 264px;
 }
 
 /* Mobile */
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
     .footer-paragraf { 
         margin: 0 auto;
         text-align: left;
@@ -947,7 +956,7 @@ max-width: 264px;
 }
 
 /* Mobile */
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
     .left-side {
         text-align: center;
     }
@@ -993,7 +1002,7 @@ max-width: 264px;
 }
 
 /* Mobile */
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
     .right-side {
         display: flex;
         flex-direction: column;
@@ -1449,7 +1458,7 @@ letter-spacing: 0.48px;
 }
 
 /* Mobile */
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
     .subscribe-container {
         text-align: center;
     }
@@ -1564,7 +1573,7 @@ letter-spacing: 0.48px;
 }
 
 /* Mobile */
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
     .submit-btn {
         margin-top: 16px;
     }
@@ -1661,17 +1670,6 @@ letter-spacing: 0.48px;
     list-style: none;
     margin-bottom: auto;
 }
-
-.menu-list-item:not(:last-child) {
-    margin-bottom: 40px;
-}
-
-/* .mobile-menu .link {
-    display: block;
-    padding: 10px;
-    color: var(--brand-background);
-    text-decoration: none;
-} */
 
 /* Mobile */
 .menu-link-mobile.touch {
