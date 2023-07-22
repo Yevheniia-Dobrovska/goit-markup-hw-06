@@ -862,12 +862,41 @@ background-color: var(--button-filter-hover);
 
 .footer-section {
     background-color: var(--brand-background);
-    padding: 100px 0;
+    
 }
 
+/* Mobile */
+@media only screen and (min-width: 428px) {
+    .footer-section {
+        /* display: flex;
+        flex-direction: column; */
+        padding-top: 97.5px;
+        padding-bottom: 96px;
+    }
+}
+
+/* Tablet */
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+    .footer-section {
+        padding: 100px 0;
+}
+}
+
+/* Mobile */
+@media only screen and (min-width: 428px) {
+    .container-footer {
+        text-align: center;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
 .container-footer {
     display: flex;
     align-items: baseline;
+}
 }
 
 .footer-paragraf {
