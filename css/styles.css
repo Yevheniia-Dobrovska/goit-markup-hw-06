@@ -103,18 +103,18 @@ a {
     }
 }
    
-/* Base styles */
+/* Mobile */
 .navigation {
     display: flex;
-    justify-content: space-between;
+    align-items: space-between;
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
     .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -186,7 +186,7 @@ margin-right: 76px;
     .menu-list {
         display: flex;
         gap: 40px;
-    }
+    }       
 }
 
 .burger-menu {
