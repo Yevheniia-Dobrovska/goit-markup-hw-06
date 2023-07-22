@@ -880,6 +880,22 @@ background-color: var(--button-filter-hover);
 }
 }
 
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;  
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width:1157px){
+    .container-footer {
+        padding: 0 108px;
+    }
+}
+
 /* Desktop */
 @media only screen and (min-width: 1158px) {
     .container-footer {
@@ -933,10 +949,28 @@ max-width: 264px;
     margin-bottom: 16px;
 }
 
+/* Mobile */
+@media only screen and (min-width: 428px) {
+    .left-side {
+        text-align: center;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .left-side {
+        text-align: left;
+        margin-right: 24px;
+        margin-bottom: 72px;
+    }
+}
+
+/* Desktop */
 @media only screen and (min-width: 1158px) {
     .left-side {
         margin-right: 120px;
         align-items: center;
+        text-align: center;
 }
 }
 
@@ -970,6 +1004,15 @@ max-width: 264px;
         align-items: center;
         margin-top: 72px;
         margin-bottom: 72px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .right-side {
+        display: block;
+        margin: 0;
+        text-align: left;
     }
 }
 
@@ -1407,6 +1450,19 @@ letter-spacing: 0.48px;
 
 }
 
+/* Mobile */
+@media only screen and (min-width: 428px) {
+    .subscribe-container {
+        text-align: center;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .subscribe-container {
+        text-align: left;
+    }
+}
 
 /* Desktop */
 @media only screen and (min-width: 1158px) {
@@ -1415,9 +1471,8 @@ letter-spacing: 0.48px;
     }
 }
 
-
-/* Desktop */
-@media only screen and (min-width: 1158px) {
+/* Tablet */
+@media only screen and (min-width: 768px) {
     .subscribe-form {
         display: flex;
         gap: 24px;
@@ -1428,8 +1483,11 @@ letter-spacing: 0.48px;
     margin-bottom: 16px;
 }
 
+.subscribe-label {
+    width: 100%;
+}
+
 .subscribe-input {
-    width: 264px;
     height: 40px;
     padding: 8px 16px;
     background-color: transparent;
@@ -1452,6 +1510,21 @@ letter-spacing: 0.48px;
 @media only screen and (min-width: 428px) {
     .subscribe-input {
         width: 100%;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .subscribe-input {
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .subscribe-input {
+        width: 264px;
+        
     }
 }
 
@@ -1496,6 +1569,13 @@ letter-spacing: 0.48px;
 @media only screen and (min-width: 428px) {
     .submit-btn {
         margin-top: 16px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .submit-btn {
+        margin: 0;
     }
 }
 
