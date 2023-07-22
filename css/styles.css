@@ -341,16 +341,6 @@ margin-right: 76px;
     }
 }
 
-/* Base */
-/* .address-list-mobile {
-    display: flex;
-    flex-direction: column-reverse;
-        flex-wrap: wrap;
-        gap: 12px;
-        font-style: normal;
-       
-} */
-
 .address-list > a {
     color: var(--text);
 }
@@ -1176,7 +1166,7 @@ max-width: 264px;
 }
 
 .modal-icon {
-    stroke: var(--brand-background);
+    fill: var(--brand-background);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1234,12 +1224,14 @@ max-width: 264px;
 }
 
 .modal-btn:hover,
-.modal-btn:active,
 .modal-btn:focus {
     border: none;
-    fill: var(--page);
     background-color: var(--button-filter-hover);
-    
+}
+
+.modal-btn:hover.modal-icon,
+.modal-btn:focus.modal-icon {
+    fill: var(--page);
 }
 
  .overlay {
