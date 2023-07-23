@@ -274,6 +274,12 @@ margin-right: 76px;
     color: var(--brand-background);
 }
 
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .address {
+        font-size: 12px;
+    }
+}
 
 /* Desktop */
 @media only screen and (min-width: 1158px) {
@@ -416,6 +422,13 @@ margin-right: 76px;
         }
 }
 
+/* Tablet */
+@media only screen and (min-width: 320px) {
+    .hero {
+        padding: 112px 0;
+    }
+}
+
 .container-hero {    
     align-items: center;
 }
@@ -518,10 +531,9 @@ margin-right: 76px;
 
 /* Mobile*/
 @media only screen and (max-width: 767px) {
-    .item-advantages:not(:last-child),
-    .item-advantages {
+    .item-advantages:not(:last-child) {
         margin-bottom: 72px;
-        max-width: 396px;
+        
     }
 }
 
@@ -549,6 +561,33 @@ margin-right: 76px;
     margin-bottom: 8px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Mobile */
+@media only screen and (min-width: 320px) {
+    .third-title {
+        font-size: 36px;
+        text-align: center;
+    }
+    .card-team .third-title {
+            font-size: 20px;
+}
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .third-title {
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    }
+    .card-team .third-title {
+        font-size: 20px;
+    }
 }
 
 .advantages-paragraf {
@@ -666,7 +705,7 @@ margin-right: 76px;
     .list-team {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
     }
 }
 
@@ -780,6 +819,7 @@ background-color: var(--button-filter-hover);
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 16px;
     }
 }
 
@@ -891,13 +931,15 @@ background-color: var(--button-filter-hover);
         display: flex;
         flex-wrap: wrap;
         text-align: left;  
+        max-width: 584px;
+    
     }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width:1157px){
     .container-footer {
-        padding: 0 108px;
+        padding: 0;
     }
 }
 
@@ -907,6 +949,7 @@ background-color: var(--button-filter-hover);
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
+        max-width: 1128px;
     }
 }
 
@@ -975,6 +1018,7 @@ max-width: 264px;
 @media only screen and (min-width: 1158px) {
     .left-side {
         margin-right: 120px;
+        margin-bottom: 0;
 
 }
 }
@@ -1514,18 +1558,18 @@ letter-spacing: 0.48px;
 }
 
 /* Mobile */
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
     .subscribe-input {
         width: 100%;
     }
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .subscribe-input {
         width: 100%;
     }
-}
+} */
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
@@ -1665,10 +1709,13 @@ letter-spacing: 0.48px;
 }
 
 .mobile-menu {
-
     padding: 0;
     list-style: none;
     margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
 }
 
 /* Mobile */
