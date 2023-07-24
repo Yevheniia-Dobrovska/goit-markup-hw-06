@@ -69,7 +69,7 @@ a {
 /* Desktop screen */
 @media only screen and (min-width: 1158px) {
     .container {
-        max-width: 1128px;
+        max-width: 1158px;
         padding: 0 15px;
     }
 }
@@ -235,7 +235,7 @@ margin-right: 76px;
         font-size: 36px;
         font-style: normal;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 1.11;
         letter-spacing: 0.72px;
         text-transform: capitalize;
         color: var(--brand-background);
@@ -311,7 +311,7 @@ margin-right: 76px;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.4px;
 }
 
@@ -322,7 +322,7 @@ margin-right: 76px;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
     
@@ -367,11 +367,11 @@ margin-right: 76px;
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .mail-item {
         margin-bottom: 12px;
     }
-}
+} */
 
 .hero {
     max-width: 1440px;
@@ -520,6 +520,7 @@ margin-right: 76px;
     .list-advantages {
         display: flex;
         flex-wrap: wrap;
+        gap: 24px;
     }
 }
 
@@ -575,24 +576,36 @@ margin-right: 76px;
     .third-title {
         font-size: 36px;
         text-align: center;
+        font-weight: 700;
     }
     .card-team .third-title {
             font-size: 20px;
+            font-weight: 500;
 }
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
     .third-title {
         font-family: Roboto;
         font-size: 36px;
         font-style: normal;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 1.11;
         letter-spacing: 0.72px;
         text-transform: capitalize;
+        text-align: left;
     }
     .card-team .third-title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1158px) {
+    .third-title {
+        text-align: left;
         font-size: 20px;
     }
 }
@@ -600,6 +613,8 @@ margin-right: 76px;
 .advantages-paragraf {
     letter-spacing: 0.02em;
     color: var(--text);
+    font-weight: 500;
+
 }
 
 /* Base styles */
@@ -943,12 +958,6 @@ background-color: var(--button-filter-hover);
     }
 }
 
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width:1157px){
-    .container-footer {
-        padding: 0;
-    }
-}
 
 /* Desktop */
 @media only screen and (min-width: 1158px) {
@@ -1084,7 +1093,7 @@ max-width: 264px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--page);
     margin-bottom: 16px;
@@ -1274,6 +1283,7 @@ max-width: 264px;
         transform: translateX(-50%) translateY(-50%);
     }
 } 
+
 .modal-btn {
     cursor: pointer;
     position: absolute;
@@ -1406,7 +1416,7 @@ font-size: 12px;
 font-family: Roboto;
 font-style: normal;
 font-weight: 400;
-line-height: 14px;
+line-height: 1.17;
 letter-spacing: 0.48px;
 }
 
@@ -1613,7 +1623,7 @@ letter-spacing: 0.48px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2;
     opacity: 1;
 }
 
