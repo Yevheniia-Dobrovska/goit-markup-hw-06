@@ -1307,8 +1307,8 @@ max-width: 264px;
     background-color: var(--button-filter-hover);
 }
 
-.modal-btn:hover.modal-icon,
-.modal-btn:focus.modal-icon {
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
     fill: var(--page);
 }
 
@@ -1685,6 +1685,12 @@ letter-spacing: 0.48px;
 .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.menu-toggle:hover .modal-icon,
+.menu-toggle:focus .modal-icon {
+    fill: var(--page);
 }
 
 .close-mobile-btn {
